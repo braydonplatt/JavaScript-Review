@@ -89,10 +89,13 @@ var myPoem = 'What is a jQuery but a misunderstood object?'
 //What is a jQuery but a misunderstood object? --> What Is A JQuery But A Misunderstood Object?
 
 var capitalize = function(str){
-	var string = str.split(' ');
-	
-	  myPoem.toUpperCase();
-}
+	var newString = str.split(' ');
+	newArray = [];
+	for (var i = 0; i < newString.length; i++){
+	   newArray.push() = arr[i].charAt(0).toUpperCase() = newString[i]slice(1);
+	};
+    newArray.join();
+};
 
 
 
