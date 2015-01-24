@@ -69,12 +69,15 @@ var sentence = "Dev Mountain is the best"
 
  var longest = function(str){
    var string = str.split(' ');
-   var longestWord = '';
-   for(var i = 0; i < str.length; i++){
-   	if (string[i] < longestWord.length);
-   	return string;
+   var longestWord = string[0];
+   for(var i = 0; i < string.length; i++){
+   	if (longestWord.length < string[i].length){
+       longestWord = string[i];
+     };
    };
+   return longestWord;
  };
+ longest(sentence)
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
@@ -86,7 +89,8 @@ var myPoem = 'What is a jQuery but a misunderstood object?'
 //What is a jQuery but a misunderstood object? --> What Is A JQuery But A Misunderstood Object?
 
 var capitalize = function(str){
-	var upper = myPoem;
+	var string = str.split(' ');
+	
 	  myPoem.toUpperCase();
 }
 
@@ -101,5 +105,5 @@ var theOdyssey = "function expression or function declaration? Tis an obvious ch
 
 
 var vowelCounter = function(){
-	
+
 }
