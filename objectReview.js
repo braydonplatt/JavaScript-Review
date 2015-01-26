@@ -66,18 +66,22 @@ console.log(user);
 
 //create an empty object called methodCollection. 
 
-var methodCollection = {
-
-};
+var methodCollection = {};
 
 //Now add two methods (functions that are properties on objects) to your methodCollection object. One called 'alertHello' which alerts 'hello' and another method called logHello which logs 'hello' to the console. 
 
-methodCollection.alertHello = alert('Hello'),
-methodCollection.logHello = console.log('Hello')
+var alertHello = function() {
+  alert('Hello');
+}
+var logHello = function() {
+  console.log('Hello');
+}
+
 //Now call your alertHello and logHello methods. 
 
-  //Your code here
 
+alertHello();
+logHello();
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
@@ -88,7 +92,14 @@ methodCollection.logHello = console.log('Hello')
 //voweler("This is a test") --> {i: 2, a: 1, e: 1};
 
 var voweler = function(str){
-  
+  return var vowels = {
+    i : "2",
+    a : "1",
+    e :    ,
+    o :    ,
+    u :
+  }
+
 }
 
 

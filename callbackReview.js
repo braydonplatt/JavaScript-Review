@@ -1,5 +1,7 @@
 /* Declare and Define the functions here that will make the function calls below work properly */
-
+var first = function(str, callback){
+  callback(names[3]);
+}
 
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
@@ -12,7 +14,9 @@ first(names, function(firstName){
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
-
+var last = function(str, callback){
+  callback(names[names.length -1]);
+}
 
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
@@ -27,6 +31,15 @@ last(names, function(lastName){
 
 //have the contains function return a boolean value for if the name is in the array or not.
 
+var contains = function(arr, str, callback){
+  var flag = false;
+  for(var i = 0; i < arr.length; i++){
+    if(str !== arr[i]){
+      flag = true;
+    }
+  }
+  callback(flag);
+}
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 contains('Colt', names, function(yes){
@@ -42,7 +55,14 @@ contains('Colt', names, function(yes){
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
-
+var transformation = function(arr, callback){
+  var transy = [];
+  for(var i = 0; i < arr.length, i++){
+    return arr[i] * 2;
+      arr.push transy[i];
+  };
+  callback(arr);
+};
 
 
 var numbers = [1,2,3,4,5];
