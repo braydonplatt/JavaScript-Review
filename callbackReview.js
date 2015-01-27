@@ -125,9 +125,9 @@ var users = [
     address: '192 East 32 North'
   },
 ];
-getUserById('16t', users, function(user){
+getUserById = users[2];
   console.log('The user with the id 16t has the email of ' + user.email + 'the name of ' + user.name + ' and the address of ' + user.address); 
-});
+);
 
 
 
