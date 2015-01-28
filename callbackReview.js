@@ -26,7 +26,6 @@ last(names, function(lastName){
 
 
 
-
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 //have the contains function return a boolean value for if the name is in the array or not.

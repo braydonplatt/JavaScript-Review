@@ -15,10 +15,28 @@ var callFriend = function(){
 
 
 
-/*
 
-Write a function that accepts a function as it's first argument and returns a new function (which calls the original function that was passed in) that can only ever be executed once.
 
-Once completed, add a second arguments that allows the function to be executed N number of times. After the function has been called N number of times, console.log('STAHHP');
+//Write a function that accepts a function as it's first argument and returns a new function (which calls the original function that was passed in) that can only ever be executed once.
 
-*/
+//Once completed, add a second arguments that allows the function to be executed N number of times. After the function has been called N number of times, console.log('STAHHP');
+
+var mainFn = function(fn,num) {
+  var called = false;
+  var count = 0;
+  return function() {
+    if (called === false) {
+      fn();
+      count++;
+    }
+     if(count >= num) {
+        called = true
+        return "STAHHP";
+    }      
+  }
+}
+var newFn = mainFn(function() {
+  console.log("Hi")
+},3);
+
+newFn();

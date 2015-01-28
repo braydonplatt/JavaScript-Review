@@ -37,7 +37,9 @@ var songs =
 //Above you have a large Array of Song Objects. 
 //Write a 'getter' function that returns the songs array.
 
-  //code here
+var getter = function(){
+    
+}
 
 
 //Now write a setter that takes in two paramaters.
