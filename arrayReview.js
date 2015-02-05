@@ -6,7 +6,7 @@ var last = function(arr){
 	return threeItems[threeItems.length -1];
 };
 
-alert(last(arr));
+alert(last(threeItems));
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
