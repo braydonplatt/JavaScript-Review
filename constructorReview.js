@@ -4,7 +4,7 @@ var Animal = function (species, name, legs, color, food){
    this.species = species;
    this.name = name;
    this.legs = legs;
-   this.color = legs; 
+   this.color = legs;
    this.food = food;
 }
 
@@ -27,7 +27,7 @@ var animals = [];
 var persons = [];
 
 
-//Create two instances of Animal and push those into your animal array
+//Create two instances of Animal and push those into your animal array.
 
 var tiger = new Animal ('Tiger', 'Billy', 'four', 'striped', 'meat');
 var dolphin = new Animal ('Dolphin', 'Flipper', 'none', 'grey', 'fish');

@@ -21,7 +21,9 @@ var evenArray = [1,2,3,6,22,98,45,23,22,12];
       i--;
     };
   }; 
+  return(evenArray);
 };
+evens(evenArray);
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
@@ -37,9 +39,12 @@ var randomNum = function(arr){
     console.log(check);
   if (arr.indexOf(check) !== -1){
     alert(true);
-    };
-  alert(false);       // come back to this.
+    } else {
+  alert(false);
+  };       // come back to this.
 };
+
+randomNum(randomArray);
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
@@ -89,13 +94,16 @@ var myPoem = 'What is a jQuery but a misunderstood object?'
 //What is a jQuery but a misunderstood object? --> What Is A JQuery But A Misunderstood Object?
 
 var capitalize = function(str){
-	var newString = str.split(' ');
-	newArray = [];
-	for (var i = 0; i < newString.length; i++){
-	   newArray.push() = arr[i].charAt(0).toUpperCase() = newString[i]slice(1);
-	};
-    newArray.join();
+	var wordArray = str.split(' ');
+	var newArray = [];
+	for (var i = 0; i < wordArray.length; i++){
+	   var splitUp = wordArray[i].charAt(0).toUpperCase() + wordArray[i].slice(1);
+	   newArray.push(splitUp);
+  };
+    str = newArray.join(' ');
+    return str;
 };
+capitalize(myPoem);
 
 
 
@@ -107,6 +115,16 @@ var theOdyssey = "function expression or function declaration? Tis an obvious ch
 //Write a function called vowelCounter that takes in a string (theOdyssey) and returns how many vowels are in that string.
 
 
-var vowelCounter = function(){
+var vowelCounter = function(str){
+  var counter = 0;
+  for(var i = 0; i < str.length; i++){
+    if(str[i] === 'a' || str[i] === 'e' || str[i] === 'o' || str[i] === 'i' || str[i] === 'u'){
+      counter++;
+    };
+  };
+    return counter;
+  };  
+vowelCounter(theOdyssey);
 
-}
+
+};

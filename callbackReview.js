@@ -38,7 +38,7 @@ var contains = function(arr, str, callback){
     }
   }
   callback(flag);
-}
+};
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 contains('Colt', names, function(yes){
@@ -74,9 +74,15 @@ map(numbers, function(num){
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
-
-
+var dups = function(arr, str, callback){
+var newArray = [];
+  for (var i = 0; i < arr.length; i++){
+    if(newArray.indexOf(arr[i]) < 0){
+        newArray.push(arr[i]);
+        callback(newArray);
+    }
+  }
+};
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 uniq(names, function(uniqArr){
@@ -133,7 +139,12 @@ getUserById = users[2];
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
-
+var find = function(arr, callBack) {
+ for(var i = 0; i < arr.length; i++) {
+  if (callBack(arr[i]))
+    return arr[i];
+ }
+}
 
 
 //Looks through each value in the list, returning the first one that passes a truth test 
