@@ -38,13 +38,17 @@ var songs =
 //Write a 'getter' function that returns the songs array.
 
 var getter = function(){
-    
-}
+    return songs  
+};
 
-
+var songObj = {"wrapperType":"track", "kind":"Sweet", "artistId":351794, "collectionId":402873073, "trackId":402874215, "artistName":"Nelly & Kelly Rowland", "collectionName":"5.0 (Deluxe Version)", "trackName":"Gone (feat. Kelly Rowland)", "collectionCensoredName":"5.0 (Deluxe Version)", "trackCensoredName":"Gone (feat. Kelly Rowland)", "collectionArtistName":"Nelly", "artistViewUrl":"https://itunes.apple.com/us/artist/nelly/id351794?uo=4", "collectionViewUrl":"https://itunes.apple.com/us/album/gone-feat.-kelly-rowland/id402873073?i=402874215&uo=4", "trackViewUrl":"https://itunes.apple.com/us/album/gone-feat.-kelly-rowland/id402873073?i=402874215&uo=4", "previewUrl":"http://a684.phobos.apple.com/us/r1000/064/Music/3f/46/b5/mzm.zmulpdlg.aac.p.m4a", "artworkUrl30":"http://a2.mzstatic.com/us/r30/Music/c0/f6/66/mzi.xwbxftbh.30x30-50.jpg", "artworkUrl60":"http://a1.mzstatic.com/us/r30/Music/c0/f6/66/mzi.xwbxftbh.60x60-50.jpg", "artworkUrl100":"http://a5.mzstatic.com/us/r30/Music/c0/f6/66/mzi.xwbxftbh.100x100-75.jpg", "collectionPrice":11.99, "trackPrice":1.29, "releaseDate":"2010-11-16T08:00:00Z", "collectionExplicitness":"explicit", "trackExplicitness":"notExplicit", "discCount":1, "discNumber":1, "trackCount":16, "trackNumber":8, "trackTimeMillis":267440, "country":"USA", "currency":"USD", "primaryGenreName":"Hip Hop/Rap", "radioStationUrl":"https://itunes.apple.com/station/idra.402874215"}
 //Now write a setter that takes in two paramaters.
 //The first parameter is a song object and the second parameter is a callback (which will be a placeholder for your getter function)
 //Inside your setter function first add the first parameter, or the song object, to the end of your songs array.
 //Once you do that, call your callback (getter) function which should get the songs and return them.
   
-  //code here
+var setter = function(songObj, callback){
+    songs.push(songObj);
+        return callback();
+}
+setter(songObj, getter);
